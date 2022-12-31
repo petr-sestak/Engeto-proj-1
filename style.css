@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+body {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#content {
+}
+
+#top {
+  background-image: url(PICs/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  color: white;
+  text-align: right;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  word-spacing: 100vw;
+}
+
+#toptext {
+  position: relative;
+  top: 70%;
+}
+
+.container {
+  display: flex;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.containerUnit {
+  max-width: 35%;
+  padding: 5px;
+  box-sizing: border-box;
+}

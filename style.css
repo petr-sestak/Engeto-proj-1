@@ -18,6 +18,7 @@ body {
   width: auto;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1200px;
 }
 
 img {
@@ -66,6 +67,25 @@ img {
   display: flex;
 }
 
+#reviewers {
+  display: flex;
+}
+
+#reviewers img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+#endPics {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+#endPics img {
+  width: 50%;
+}
+
 /* Classes */
 
 .containerUnit {
@@ -81,6 +101,10 @@ img {
 .blackBcg {
   background-color: dimgray;
   color: aliceblue;
+}
+
+.textCent {
+  text-align: center;
 }
 
 .contIcons {

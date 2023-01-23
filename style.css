@@ -14,6 +14,14 @@ h1 {
   width: 100%;
 }
 
+h3 {
+  padding: 10px;
+}
+
+h5 {
+  text-decoration: underline;
+}
+
 body {
   width: auto;
   margin-left: auto;
@@ -24,6 +32,11 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+p {
+  text-align: left;
+  padding: 10px;
 }
 
 /* ID settings */
@@ -45,12 +58,41 @@ img {
   right: 20%;
 }
 
+/* About us section */
+#aboutUs div h2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 #aboutUs {
   display: flex;
   box-sizing: border-box;
 }
 
-#whatWeDo {
+/* Entire section for part what we do */
+
+#contIcons {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+#contIcons div {
+  width: 80px;
+  /* Doresit problemy se sirkou. */
+}
+
+#whatWeDo h1,
+#whatWeDo p {
+  text-align: center;
+  margin: 10px;
+}
+
+#whatWeDo img {
+  filter: invert(100%);
+  margin: 5px;
 }
 
 #ourTrips {
@@ -60,20 +102,55 @@ img {
 
 #ourTrips div {
   height: 200px;
-  width: 33%;
+  width: 32%;
+  margin: 3px;
+  box-sizing: border-box;
+  /* docelat box sizing, neni to zde presne */
+  position: relative;
 }
 
-#whereGo {
+#ourTrips div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#ourTrips div h1 {
+  text-align: center;
+  position: absolute;
+  /* zarovnani se mi nelibi, neni to presne */
+  top: 40%;
+}
+
+#whereGo,
+#whereGo p {
   display: flex;
+}
+
+#whereGo div {
+  text-align: left;
+  width: 30%;
+  padding: 10px;
+}
+
+#reviewsFirst {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 #reviewers {
   display: flex;
+  justify-content: space-around;
 }
 
 #reviewers img {
   border-radius: 50%;
-  width: 50%;
+  width: 40%;
+}
+
+#reviewers div {
+  width: 40%;
 }
 
 #endPics {
@@ -83,7 +160,19 @@ img {
 }
 
 #endPics img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#endPics div {
+  height: 200px;
   width: 50%;
+}
+
+#contacts p {
+  font-size: small;
+  text-align: center;
 }
 
 /* Classes */
@@ -99,20 +188,10 @@ img {
 }
 
 .blackBcg {
-  background-color: dimgray;
+  background-color: rgb(29, 29, 29);
   color: aliceblue;
 }
 
 .textCent {
   text-align: center;
-}
-
-.contIcons {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-.icons {
-  width: 50px;
 }

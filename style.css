@@ -4,6 +4,11 @@
   padding: 0px;
 }
 
+:root {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+}
+
 /* Settings for the HTML elements. */
 h1 {
   font-size: xx-large;
@@ -47,6 +52,10 @@ img {
   object-fit: cover;
 }
 
+.elmPics img, .rounded {
+  border-radius: 5px;
+}
+
 p {
   text-align: left;
   padding: 1em;
@@ -55,6 +64,14 @@ p {
 button {
   padding: 0.5em;
   width: 100px;
+}
+
+a {
+  color: #efa69d;
+}
+
+a:hover {
+  color: #e9877b;
 }
 
 /* UNIQUE TOP MENU */
@@ -98,7 +115,17 @@ button {
 }
 
 .blackBcg {
-  background-color: rgb(29, 29, 29);
+  background-color: #33292a;
+  color: aliceblue;
+}
+
+.blackBcg-2 {
+  background-color: #644b4f;
+  color: aliceblue;
+}
+
+.blackBcg-3 {
+  background-color: #333333;
   color: aliceblue;
 }
 
@@ -109,6 +136,10 @@ button {
 
 .container-unit-where-1 {
   flex: 1 1 0px;
+}
+
+.leftAlign {
+  text-align: left;
 }
 
 .container-unit-where-2 {
@@ -191,8 +222,9 @@ button {
 
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* gap: 0.3em; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* Rozlozeni nize 1 2 1 se mi zda daleko hezci. */
+    grid-template-columns: 1fr 2fr 1fr;
   }
 
   .grid-container-two {
